@@ -47,7 +47,7 @@ Voyage is designed to simplify and enhance your travel experience.
    - Click on the green **Code** button above.
    - Select **Download ZIP** or use Git:
      ```bash
-     git clone https://github.com/yourusername/voyage-app.git
+     git clone [https://github.com/Wanxin2883/voyage-travel-agency-application.git]
      ```
 
 2. **Open in Android Studio:**
