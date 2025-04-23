@@ -1,4 +1,4 @@
-# 🌍 Voyage – Your Ultimate Travel Companion
+# ✈️ Voyage – Your Ultimate Travel Companion
 
 [![Watch Live Demo](https://img.shields.io/badge/Watch%20Live%20Demo-YouTube-red)](https://youtu.be/7MRvDKIBiMQ)
 
@@ -72,7 +72,6 @@ Check out a full walkthrough of the app:
 ## 👤 Author
 
 **Cheah Wan Xin** & **Zoya Khan** 
-[GitHub](https://github.com/Wanxin2883)
-
+From HELP University
 ---
 
