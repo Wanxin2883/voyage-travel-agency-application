@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Testing"
+        tools:targetApi="31">
+
+        <!-- Activities -->
+        <activity
+            android:name=".RegisterPage"
+            android:exported="true"
+            android:theme="@style/Theme.Testing.NoActionBar"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginPage"
+            android:exported="true"
+            android:theme="@style/Theme.Testing.NoActionBar"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true"
+            android:theme="@style/Theme.Testing.NoActionBar"
+            android:screenOrientation="sensor"/>
+        <activity android:name=".HomePage" android:screenOrientation="sensor"/>
+        <activity android:name=".PackageDetail" android:screenOrientation="sensor"/>
+        <activity android:name=".FavoritePage" android:screenOrientation="sensor"/>
+        <activity android:name=".AccountPage" android:screenOrientation="sensor"/>
+        <activity android:name=".ViewAllPackage" android:screenOrientation="sensor"/>
+        <activity android:name=".AdminHome" android:screenOrientation="sensor"/>
+        <activity android:name=".AddTour" android:screenOrientation="sensor"/>
+        <activity android:name=".SelectEditTour" android:screenOrientation="sensor"/>
+        <activity android:name=".EditTour" android:screenOrientation="sensor"/>
+        <activity android:name=".DeleteTour" android:screenOrientation="sensor"/>
+        <activity android:name=".PaymentPage" android:screenOrientation="sensor"/>
+        <activity android:name=".InvoicePage" android:screenOrientation="sensor"/>
+    </application>
+
+</manifest>

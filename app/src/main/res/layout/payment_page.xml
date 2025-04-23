@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@id/title"
+        android:orientation="horizontal"
+        android:layout_margin="40dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/round_arrow_back_ios_24"
+            android:background="@color/white"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Confirmation"
+            android:textColor="@color/purple_500"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/packageDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below = "@+id/title"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/packageTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Package Title"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/packagePriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Package price"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/packageLocationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/paymentOptionsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/packageDetailsLayout"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Options"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- GrabPay Option -->
+        <RadioButton
+            android:id="@+id/radioGrabPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GrabPay" />
+
+        <!-- Online Banking Option -->
+        <RadioButton
+            android:id="@+id/radioOnlineBanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Banking" />
+
+        <Spinner
+            android:id="@+id/spinnerBanks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:visibility="gone"/>
+
+        <!-- Add / Manage Payment Card Option -->
+        <RadioButton
+            android:id="@+id/radioAddPaymentCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Payment" />
+
+        <LinearLayout
+            android:id="@+id/paymentCardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etCardNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card Number"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:id="@+id/layoutExpiryDateCVV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etCardExp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:hint="Expiry Date"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/etCVV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:hint="CVV"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- TNG e-wallet Option -->
+        <RadioButton
+            android:id="@+id/radioTNGWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TNG e-wallet" />
+
+    </RadioGroup>
+
+    <!-- Payment Button -->
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/paymentOptionsRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_style"
+        android:text="Pay Now"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+</RelativeLayout>

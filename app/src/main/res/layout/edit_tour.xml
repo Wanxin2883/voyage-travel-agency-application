@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/editTourHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="33dp"
+            android:text="Edit Tour Package"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:background="@color/white"
+            android:src="@drawable/round_arrow_back_ios_24" />
+
+        <ImageButton
+            android:id="@+id/editTourImage"
+            android:layout_width="312dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/editTourHeading"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@null"
+            android:contentDescription="Upload Image"
+            android:onClick="selectImage"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_add_photo_alternate_24" />
+
+        <EditText
+            android:id="@+id/editTourTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/editTourImage"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/box_stroke"
+            android:hint="Title"
+            android:maxLines="1"
+            android:padding="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTourTitle"
+            android:layout_marginTop="16dp"
+            android:id = "@+id/datePickerLayout1"
+            android:background="@drawable/box_stroke"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id = "@+id/showStartDate">
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="Start Date"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="18sp"/>
+                <Button
+                    android:id="@+id/startDateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:textAllCaps="false"
+                    android:text="Select Date"
+                    android:onClick="onSelectDateButtonClick" />
+            </LinearLayout>
+
+            <DatePicker
+                android:id="@+id/startDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@+id/showStartDate"
+                android:layout_centerInParent="true"
+                android:calendarTextColor="@color/purple_500" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datePickerLayout1"
+            android:layout_marginTop="16dp"
+            android:id = "@+id/datePickerLayout2"
+            android:background="@drawable/box_stroke"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id = "@+id/showEndDate">
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="End Date"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="18sp"/>
+                <Button
+                    android:id="@+id/endDateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:textAllCaps="false"
+                    android:text="Select Date"
+                    android:onClick="onSelectDateButtonClick" />
+            </LinearLayout>
+
+            <DatePicker
+                android:id="@+id/endDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@+id/showEndDate"
+                android:layout_centerInParent="true"
+                android:calendarTextColor="@color/purple_500" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTourLocation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/datePickerLayout2"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/box_stroke"
+            android:hint="Location"
+            android:maxLines="1"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/editTourPrice"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/editTourLocation"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/box_stroke"
+            android:hint="Price"
+            android:maxLines="1"
+            android:padding="12dp" />
+        <!--  EditText for tour description  -->
+        <EditText
+            android:id="@+id/editTourDesc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/editTourPrice"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/box_stroke"
+            android:gravity="center_vertical"
+            android:hint="Description"
+            android:padding="12dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="208dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editTourDesc"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_style"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</ScrollView>

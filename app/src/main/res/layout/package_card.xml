@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:background="@drawable/box_stroke">
+            <!--  Image view for tour image  -->
+            <ImageView
+                android:id="@+id/tourImage"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_add_photo_alternate_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp">
+                <!--  Tour title  -->
+                <TextView
+                    android:id="@+id/tourTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tour Title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <!--  Country  -->
+                <TextView
+                    android:id="@+id/tourStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date: Unknown"
+                    android:textColor="@color/purple_500"/>
+                <!--  City  -->
+                <TextView
+                    android:id="@+id/tourLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Unknown"
+                    android:textColor="@color/purple_500"/>
+                <!--  Type of tour  -->
+                <TextView
+                    android:id="@+id/tourPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price: Unknown"
+                    android:textColor="@color/purple_500"/>
+            </LinearLayout>
+        </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
