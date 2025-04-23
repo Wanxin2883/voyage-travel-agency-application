@@ -71,6 +71,7 @@ Check out a full walkthrough of the app:
 
 ## 👤 Author
 
-**Cheah Wan Xin** & **Zoya Khan** 
+Cheah Wan Xin & Zoya Khan
+
 ---
 
