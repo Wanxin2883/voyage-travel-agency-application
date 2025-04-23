@@ -47,13 +47,13 @@ Voyage is designed to simplify and enhance your travel experience.
    - Click on the green **Code** button above.
    - Select **Download ZIP** or use Git:
      ```bash
-     git clone [https://github.com/Wanxin2883/voyage-travel-agency-application.git]
+     git clone https://github.com/Wanxin2883/voyage-travel-agency-application.git
      ```
 
 2. **Open in Android Studio:**
    - Launch **Android Studio**.
    - Click on **File > Open**.
-   - Navigate to the downloaded project folder (`voyage-app`) and select it.
+   - Navigate to the downloaded project folder (`voyage-travel-agency-application`) and select it.
    - Wait for Gradle to sync (this may take a few moments).
 
 3. **Run the App:**
