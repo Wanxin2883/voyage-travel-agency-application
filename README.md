@@ -69,6 +69,6 @@ Check out a full walkthrough of the app:
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
 Created by **Cheah Wan Xin & Zoya Khan** for learning purpose.
